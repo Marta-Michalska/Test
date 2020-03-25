@@ -1,14 +1,7 @@
 package com.company;
 
-public class Kot implements Glos, Łapy{
+public class Kot {
 
-    @Override
-    public int ilośćŁap() {
-        return 4;
-    }
+    private String rasa = new String();
 
-    @Override
-    public void dajGlos() {
-        System.out.println("Mrauu");
-    }
 }
