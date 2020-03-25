@@ -2,13 +2,29 @@ package com.company;
 
 import java.math.BigInteger;
 import java.sql.SQLOutput;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Random;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        Kot kot = new Kot();
+        Pies pies = new Pies();
+        Lew lew = new Lew();
+        Łosoś łosoś = new Łosoś();
+        Słoń słoń = new Słoń();
+
+        List<Łapy> listŁapy  = new ArrayList<>();
+        listŁapy.add(kot);
+        listŁapy.add(pies);
+        listŁapy.add(lew);
+        listŁapy.add(łosoś);
+        listŁapy.add(słoń);
+
+        for(Łapy ł : listŁapy) {
+            System.out.println("Zwierzę " + ł.getClass().getSimpleName() + " posiada " + ł.ilośćŁap() + " łap.");
+        }
+
 
        /* int[] tab = {20, 13, 10, 1, 100, 20, 102, 4, 10, 17};
 
