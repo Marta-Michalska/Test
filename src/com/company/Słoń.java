@@ -1,14 +1,14 @@
 package com.company;
 
-public class Słoń implements Glos, Łapy {
-
-    @Override
-    public int ilośćŁap() {
-        return 4;
-    }
+public class Słoń implements Lapy,Glos {
 
     @Override
     public void dajGlos() {
-        System.out.println("Whhhhuuuuuufffff");
+        System.out.println("Toot tooot");
+    }
+
+    @Override
+    public int ilośćLap() {
+        return 4;
     }
 }
